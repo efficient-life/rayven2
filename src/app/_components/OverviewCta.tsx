@@ -3,7 +3,7 @@ import { GiGears, GiProcessor } from "react-icons/gi";
 
 export const OverviewCta = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section id="OverviewCta" className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center sm:py-16 lg:px-6">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
           RAYVEN（レイブン）が選ばれる理由

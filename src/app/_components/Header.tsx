@@ -14,8 +14,8 @@ export const Header: React.FC = () => {
 
   const menuItems = [
     { href: "/", text: "ホーム", current: true },
-    { href: "/company", text: "会社概要" },
-    { href: "/features", text: "特徴" },
+    { href: "/#OverviewCta", text: "会社概要" },
+    // { href: "/features", text: "特徴" },
     { href: "/contact", text: "お問い合わせ", special: true },
   ];
 
