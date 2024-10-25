@@ -2,7 +2,6 @@ import { Achievement } from "./_components/Achievement";
 import { Faq } from "./_components/Faq";
 import { Hero } from "./_components/Hero";
 import { OverviewCta } from "./_components/OverviewCta";
-import { Partner } from "./_components/Partner";
 import { Service } from "./_components/Service";
 
 export default function Home() {
@@ -14,7 +13,7 @@ export default function Home() {
         {/* <TradingCompany /> */}
         <Achievement />
         <OverviewCta />
-        <Partner />
+        {/* <Partner /> */}
         {/* <News /> */}
         <Faq />
       </main>

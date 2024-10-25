@@ -8,9 +8,9 @@ export default function contact() {
           お問い合わせ
         </h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-          技術的な問題がありますか？
-          ベータ機能についてのフィードバックを送りたいですか？
-          ビジネスプランの詳細が必要ですか？ ぜひお知らせください。
+          システム開発,IT、AIに関するご質問・ご相談は、お気軽にご連絡ください。
+          <br />
+          弊社は最新の技術と豊富な経験を駆使し、貴社のご期待に答えらえるよう最善を尽くします。
         </p>
         <form action="#" className="space-y-8">
           <div>

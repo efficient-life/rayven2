@@ -1,13 +1,17 @@
 /* eslint-disable @next/next/no-sync-scripts */
 "use client";
 import { useEffect } from "react";
+import Script from "next/script";
 import { FaAnglesDown, FaCircleExclamation } from "react-icons/fa6";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { BsFillRecordCircleFill } from "react-icons/bs";
 
 export const Hero = () => {
   useEffect(() => {
-    particlesJS("particles-js", particleSettings);
+    // particles.jsが読み込まれた後でのみparticlesJSを呼び出す
+    if (typeof window !== "undefined" && window.particlesJS) {
+      window.particlesJS("particles-js", particleSettings);
+    }
   }, []);
 
   return (
@@ -23,7 +27,19 @@ export const Hero = () => {
             zIndex: -1,
           }}
         ></div>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        {/* CDNスクリプトをnext/scriptで読み込み */}
+        <Script
+          src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+          strategy="afterInteractive"
+          onLoad={() => {
+            if (typeof window !== "undefined" && window.particlesJS) {
+              window.particlesJS("particles-js", particleSettings);
+            }
+          }}
+        />
+
+        {/* 以下はボタンやリンクなどのUI */}
         <a
           href="#"
           className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
@@ -76,10 +92,10 @@ const particleSettings = {
       },
     },
     color: {
-      value: "#7d7d7d", // 青色の粒子
+      value: "#7d7d7d",
     },
     shape: {
-      type: "star", // 星型の粒子
+      type: "star",
       stroke: {
         width: 0,
         color: "#000000",
@@ -111,7 +127,7 @@ const particleSettings = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#7d7d7d", // 赤色の線
+      color: "#7d7d7d",
       opacity: 0.4,
       width: 1,
     },

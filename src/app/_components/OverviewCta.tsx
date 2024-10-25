@@ -21,7 +21,7 @@ export const OverviewCta = () => {
               豊富な開発経験からお客様の達成したい目的に合わせてた開発のご提案が可能です
             </p>
             <a
-              href="#"
+              href="#achievement"
               className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400"
             >
               開発実績一覧へ

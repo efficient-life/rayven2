@@ -66,9 +66,9 @@ export const Faq = () => {
               href="/support"
               className="text-primary-600 dark:text-primary-500 hover:underline"
             >
-              サポートページ
+              お問い合わせ
             </Link>
-            をご確認ください。
+            ください
           </p>
         </>
       ),

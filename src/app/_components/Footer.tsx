@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { GiRaven } from "react-icons/gi";
 
 interface FooterLink {
@@ -18,26 +19,36 @@ const resources: FooterLink[] = [
 ];
 
 const follow: FooterLink[] = [
-  { name: "Github", href: "https://github.com/themesberg/flowbite" },
-  { name: "Discord", href: "https://discord.gg/4eeurUVvTy" },
+  { name: "X(旧:Twitter)", href: "https://x.com/yoshi_tech122" },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=100006866446424",
+  },
+  // { name: "Github", href: "https://github.com/themesberg/flowbite" },
+  // { name: "Discord", href: "https://discord.gg/4eeurUVvTy" },
 ];
 
 const socialLinks: SocialLink[] = [
   {
     name: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/profile.php?id=100006866446424",
     icon: (props: React.SVGProps<SVGSVGElement>) => <FaFacebook {...props} />,
   },
   {
-    name: "Instagram",
-    href: "#",
-    icon: (props: React.SVGProps<SVGSVGElement>) => <FaInstagram {...props} />,
+    name: "X(旧:Twitter)",
+    href: "https://x.com/yoshi_tech122",
+    icon: (props: React.SVGProps<SVGSVGElement>) => <FaXTwitter {...props} />,
   },
-  {
-    name: "GitHub",
-    href: "#",
-    icon: (props: React.SVGProps<SVGSVGElement>) => <FaGithub {...props} />,
-  },
+  // {
+  //   name: "Instagram",
+  //   href: "#",
+  //   icon: (props: React.SVGProps<SVGSVGElement>) => <FaInstagram {...props} />,
+  // },
+  // {
+  //   name: "GitHub",
+  //   href: "#",
+  //   icon: (props: React.SVGProps<SVGSVGElement>) => <FaGithub {...props} />,
+  // },
 ];
 
 interface FooterLinkSectionProps {
