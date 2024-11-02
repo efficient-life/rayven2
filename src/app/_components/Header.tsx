@@ -56,13 +56,13 @@ export const Header: React.FC = () => {
                     <Link
                       href={item.href}
                       className={`block py-2 pr-4 pl-3 ${
-                        item.current
+                        item.text
                           ? "text-white rounded-full bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
                           : item.special
                           ? "text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
                           : "text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                       }`}
-                      aria-current={item.current ? "page" : undefined}
+                      aria-current={item.text ? "page" : undefined}
                     >
                       {item.text}
                     </Link>
