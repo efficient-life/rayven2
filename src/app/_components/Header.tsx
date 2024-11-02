@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
   };
 
   const menuItems = [
-    { href: "/", text: "ホーム", current: true },
+    { href: "/", text: "ホーム" },
     // { href: "/#OverviewCta", text: "会社概要" },
     { href: "/#service", text: "サービス内容" },
     // { href: "/features", text: "特徴" },
@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
 
   return (
     <header className="fixed top-6 left-0 right-0 z-50">
-      <nav className="border bg-white border-gray-200 px-4 lg:px-6 py-2 sm:py-4 rounded-lg dark:bg-gray-800 lg:rounded-full w-11/12 sm:w-10/12 mx-auto shadow-lg">
+      <nav className="border backdrop-blur-md bg-white/80 border-gray-200 px-4 lg:px-6 py-2 sm:py-4 rounded-lg dark:bg-gray-800 lg:rounded-full w-11/12 sm:w-10/12 mx-auto shadow-lg">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link href="/" className="flex items-center text-black">
             <GiRaven className="text-3xl mr-1" />
